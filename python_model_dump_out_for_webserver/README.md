@@ -5,7 +5,7 @@
 2. 載入模型(1) 圖片模型 : 使用KERAS PRETRAINED INCEPTION MODEL圖片模型建構，載入權重並預測(@P2)圖片識別率。
 3. 特徵預處理   <br>
 
-    * 文字特徵(title/description) :  <br>
+    * ```diff + 文字特徵(title/description)``` :  <br>
       1. 從中文翻譯為俄文 <br>
       2. 載入事前訓練好的CountVectorizer以及TfidfVectorizer替文字特徵做轉換  <br>
     * 分類特徵(category_name/parent_category_name) :  <br>
