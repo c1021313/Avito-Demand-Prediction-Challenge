@@ -20,3 +20,8 @@
 4. 載入模型(2) 總機率模型 : 載入預先訓練好nn/lgbm的模型(請閱training_model訓練模型)，使用以上四類不同型態資料當作輸入並做預測。 <br>
 5.
 
+```diff
+- this will be highlighted in red
++ this will be highlighted in green
+- this will be highlighted in red
+```
