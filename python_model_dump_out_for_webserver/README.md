@@ -1,6 +1,6 @@
 ## AWS雲端上LINUX的PYTHON MODEL
 
-### 重點程序分析:
+### **重點程序分析:**
 1. 連線LOCAL端的MYSQL，讀取SQL中存取的使用者輸入資料
 2. 載入模型(1) 圖片模型 : 使用KERAS PRETRAINED INCEPTION MODEL圖片模型建構，載入權重並預測 ***(@P2)*** 圖片識別率。
 3. 特徵預處理   <br>
