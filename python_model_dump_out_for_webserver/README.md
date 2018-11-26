@@ -2,7 +2,7 @@
 
 ### 重點程序分析:
 1. 連線LOCAL端的MYSQL，讀取SQL中存取的使用者輸入資料
-2. 載入模型(1) 圖片模型 : 使用KERAS PRETRAINED INCEPTION MODEL圖片模型建構，載入權重並預測```diff - (@P2)圖片識別率```。
+2. 載入模型(1) 圖片模型 : 使用KERAS PRETRAINED INCEPTION MODEL圖片模型建構，載入權重並預測(@P2)圖片識別率。
 3. 特徵預處理   <br>
 
     * 文字特徵(title/description) :  <br>
@@ -17,11 +17,6 @@
     * 圖片特徵(image_confidence) :  <br>
       1. 使用上方模型(1)預測出的機率 <br>        
               
-4. 載入模型(2) 總機率模型 : 載入預先訓練好nn/lgbm的模型(請閱training_model訓練模型)，使用以上四類不同型態資料當作輸入並做預測。 <br>
-5.
-
-```diff
-- this will be highlighted in green
-+ this will be highlighted in green
-- this will be highlighted in red
-```
+4. 載入模型(2) 總機率模型 : 載入預先訓練好nn/lgbm的模型(請閱training_model訓練模型)，使用以上四類不同型態資料當作輸入並做預測成交機率(@P1)。 <br>
+5. If判斷式依照總機率不同給予不同評語(@P3)
+6. 結合(@P1), (@P2), (@P3)後回傳至node.js server並傳回使用者前端
