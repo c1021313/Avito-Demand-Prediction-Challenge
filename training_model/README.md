@@ -56,7 +56,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
                       GRU淺析2.1 GRU的輸入輸出結構GRU的輸入輸出結構與普通的RNN是一樣的。
                       有一個當前的輸入，和上一個節點傳遞下來的隱狀態（hidden state），這個隱狀態包含了之前節點的相關信息。
                       結合和，GRU會得到當前隱藏節點的輸出和傳遞給下一個節點的隱狀態
-<div style="text-align: center"> <img src="https://i1.read01.com/SIG=7je5e5/304932354d336f595442.jpg" width=80%/> 
+<div style="text-align: center"> <img src="https://i1.read01.com/SIG=7je5e5/304932354d336f595442.jpg" width=0%/> 
 </div>
 
 
