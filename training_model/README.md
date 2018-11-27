@@ -12,5 +12,5 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享
     * 數值特徵(price) : 
     * 圖片特徵(image) :
 
-![image](https://github.com/c1021313/Avito-Demand-Prediction-Challenge/img/Avito商品範例.png)
+![image](https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/Avito商品範例.png)
 
