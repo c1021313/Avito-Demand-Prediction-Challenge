@@ -99,21 +99,21 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 </p>
 
 *  將Avito照片資料集套入inception模型中的效果以及預測結果：<br>      
-1. inception模型 **"能夠"** 準確預測舉例（圖片辨識率/信心程度 > 90%） <br>  
+#### 1. inception模型 "能夠" 準確預測舉例（圖片辨識率/信心程度 > 90%） <br>  
    可以看到清晰的圖片擁有較高的辯視率（光線/角度/是否涵蓋物件全貌） 
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/1.png" width=70%/> 
 </p>
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/3.png" width=70%/> 
 </p>
  <br>
-2. inception模型 **"無法"** 準確預測舉例（圖片辨識率/信心程度 < 10%） <br>  
+#### 2. inception模型 "無法" 準確預測舉例（圖片辨識率/信心程度 < 10%） <br>  
    可以看到這些的圖片都相當不清晰，因此inception model也無法明確的判斷此圖片，辨識率程度相對低。 
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/2.png" width=70%/> 
 </p>
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/4.png" width=70%/> 
 </p>
  <br>
-3. inception模型對於 **同樣的類別** 的照片比較（圖片辨識率高 > 90% ＆ 圖片辨識率低 < 20%） <br>  
+#### 3. inception模型對於 "同樣的類別" 的照片比較（圖片辨識率高 > 90% ＆ 圖片辨識率低 < 20%） <br>  
    針對同樣類別的照片(minivan)，可見上方的照片模型相當肯定的判斷為該類別，且**信心程度高**。(圖片辨識率 > 90%) <br>  
    但下方圖片由於拍攝角度. 光線等因素較不清晰，且無法涵蓋圖片全貌，雖然模型判斷得出為minivan類別，但相對**信心程度低**了很多。(圖片辨識率低 < 20%)
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/5.png" width=70%/> 
