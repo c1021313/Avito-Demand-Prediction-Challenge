@@ -98,7 +98,9 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/keras_pretrained_model.png" width=75%/> 
 </p>
 
-*  將Avito照片資料集套入inception模型中的效果以及預測結果：<br>      
+<br><br>
+
+#### *  將Avito照片資料集套入inception模型中的效果以及預測結果：<br>      
 #### 1. inception模型 "能夠" 準確預測舉例（圖片辨識率/信心程度 > 90%） <br>  
    可以看到清晰的圖片擁有較高的辯視率（光線/角度/是否涵蓋物件全貌） 
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/1.png" width=70%/> 
