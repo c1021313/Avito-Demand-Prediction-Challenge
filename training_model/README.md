@@ -53,7 +53,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
                       GRU（Gate Recurrent Unit）是循環神經網絡（Recurrent Neural Network, RNN）的一種。
                       和LSTM（Long-Short Term Memory）一樣，也是為了解決長期記憶和反向傳播中的梯度等問題而提出來的。
                       我們在我們的實驗中選擇GRU是因為它的實驗效果與LSTM相似，但是更易於計算。
-                      GRU淺析2.1 GRU的輸入輸出結構GRU的輸入輸出結構與普通的RNN是一樣的。
+                      GRU的輸入輸出結構GRU的輸入輸出結構與普通的RNN是一樣的。
                       有一個當前的輸入，和上一個節點傳遞下來的隱狀態（hidden state），這個隱狀態包含了之前節點的相關信息。
                       結合和，GRU會得到當前隱藏節點的輸出和傳遞給下一個節點的隱狀態
                       
@@ -66,8 +66,16 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
             
                     
 ### b. 分類特徵:  <br> 
-            1. 使用map轉換為俄文類別 
-            2. 做label Encoding 
+            1. 將分類特徵個別填補空缺值
+            2. 做label Encoding
+            3. 使用keras Embedding將分類特徵轉換成高維度向量空間
+            
+                      > 為什麼要轉換成高維度向量？
+                        參考paper資料：
+                        https://arxiv.org/pdf/1604.06737.pdf
+                        https://www.fast.ai/2018/04/29/categorical-embeddings/
+                        https://medium.com/@satnalikamayank12/on-learning-embeddings-for-categorical-data-using-keras-165ff2773fc9
+            
 ### c. 數值特徵:   <br> 
             1. 從台幣(NTD) 轉換為俄國盧布 (RUB) 
             2. 並取log 
