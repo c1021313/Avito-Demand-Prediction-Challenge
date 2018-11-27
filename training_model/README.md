@@ -15,7 +15,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享：
 
 ## 2. nn神經網路架構:
  vectors.html
-為了要同時將四種形式特徵合併至同一個深度學習神經網路模型之中，我將四種特徵分別做前處理後，使用以下架構構建神經網路架構： <br>
+為了要同時將四種形式特徵合併至同一個深度學習神經網路模型之中，我將四種特徵分別做前處理後，使用以下架構構建神經網路模型以進行模型訓練，詳細特徵前處理方式請參考以下內容： <br>
 
 ![image](https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/my_nn_structure.png)
   <br>
