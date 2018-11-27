@@ -1,5 +1,5 @@
 # Avito-Demand-Prediction-Challenge
-Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享
+Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享：
 
 
 ## 1. 序言: <br>
