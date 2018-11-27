@@ -92,3 +92,18 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
                * keras提供以下幾種pretrained model：
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/keras_pretrained_model.png" width=75%/> 
 </p>
+
+               * 將Avito照片資料集套入inception模型中的效果以及預測結果：
+               
+                 >> inception模型"能夠"準確預測舉例（信心程度 > 90%）
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/1.png" width=50%/> 
+</p>
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/2.png" width=50%/> 
+</p>
+
+                 >> inception模型"無法"準確預測舉例（信心程度 < 10%）
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/3.png" width=50%/> 
+</p>
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/4.png" width=50%/> 
+</p>
+
