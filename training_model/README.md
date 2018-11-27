@@ -9,7 +9,9 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享：
     * 數值特徵(price) :   <br>
     * 圖片特徵(image) :  <br>
 
-![image](https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/Avito商品範例.png)
+<img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/Avito商品範例.png" width=120%/>
+
+
 
 ------
 
@@ -25,7 +27,8 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享：
            
                  > Facebook FAIR實驗室開源了fastText。 Facebook聲稱fastText比其他學習方法要快得多，
                  能夠訓練模型「在使用標準多核CPU的情況下10分鐘內處理超過10億個詞彙」，fastText能將訓練時間由數天縮短到幾秒鐘。
-<img src="https://camo.githubusercontent.com/4120cfa3f075b4820e2c933f9baad490bef2c64e/687474703a2f2f69322e62616e6771752e636f6d2f6a2f6e6577732f32303138303630362f3734396132323135323832353736333231363653353137332e706e67" width=50%/>
+<div style="text-align: center"> <img src="https://camo.githubusercontent.com/4120cfa3f075b4820e2c933f9baad490bef2c64e/687474703a2f2f69322e62616e6771752e636f6d2f6a2f6e6577732f32303138303630362f3734396132323135323832353736333231363653353137332e706e67" width=80%/> 
+</div>
 
 
                  我們使用一個標準多核 CPU，得到了在10分鐘內訓練完超過10億詞彙量模型的結果。
