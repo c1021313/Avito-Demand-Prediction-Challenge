@@ -47,7 +47,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 <div style="text-align: center"> <img src="https://camo.githubusercontent.com/4120cfa3f075b4820e2c933f9baad490bef2c64e/687474703a2f2f69322e62616e6771752e636f6d2f6a2f6e6577732f32303138303630362f3734396132323135323832353736333231363653353137332e706e67" width=80%/> 
 </div>
 
-            2. 分別各經過兩層GRU層
+            2. title/description分別各經過兩層GRU層
             
                     > GRU介紹：
                       GRU（Gate Recurrent Unit）是循環神經網絡（Recurrent Neural Network, RNN）的一種。
@@ -56,11 +56,14 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
                       GRU淺析2.1 GRU的輸入輸出結構GRU的輸入輸出結構與普通的RNN是一樣的。
                       有一個當前的輸入，和上一個節點傳遞下來的隱狀態（hidden state），這個隱狀態包含了之前節點的相關信息。
                       結合和，GRU會得到當前隱藏節點的輸出和傳遞給下一個節點的隱狀態
+                      
+                      圖：GRU的輸入輸出結構
 <div style="text-align: center"> <img src="https://i1.read01.com/SIG=7je5e5/304932354d336f595442.jpg" width=50%/> 
 </div>
 
-
-
+            3. title/description各別經過一層dense層（dense = dense + dropout + Prelu）
+            4. 將title/description做串連concatenate後加入一層dense層dense = dense + dropout + Prelu）
+            
                     
 ### b. 分類特徵:  <br> 
             1. 使用map轉換為俄文類別 
