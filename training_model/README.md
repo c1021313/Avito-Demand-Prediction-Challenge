@@ -10,7 +10,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
     * 圖片特徵(image) :  <br>
     
 <p align="center"> 
-<img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/Avito商品範例.png" width=100%/></p> <br>
+<img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/Avito商品範例.png" width=80%/></p> <br>
 
   
 ------ 
