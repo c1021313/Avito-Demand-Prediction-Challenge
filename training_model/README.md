@@ -44,8 +44,8 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
                       “她 愛 我” 的特徵是一樣的。如果加入 2-Ngram，第一句話的特徵還有 “我-愛” 和 “愛-她”，這兩句話 “我 愛 她” 和 
                       “她 愛 我” 就能區別開來了。當然啦，為了提高效率，我們需要過濾掉低頻的 N-gram。
 
-<div style="text-align: center"> <img src="https://camo.githubusercontent.com/4120cfa3f075b4820e2c933f9baad490bef2c64e/687474703a2f2f69322e62616e6771752e636f6d2f6a2f6e6577732f32303138303630362f3734396132323135323832353736333231363653353137332e706e67" width=80%/> 
-</div>
+<p align="center"> <img src="https://camo.githubusercontent.com/4120cfa3f075b4820e2c933f9baad490bef2c64e/687474703a2f2f69322e62616e6771752e636f6d2f6a2f6e6577732f32303138303630362f3734396132323135323832353736333231363653353137332e706e67" width=80%/> 
+</p>
 
             2. title/description分別各經過兩層GRU層
             
