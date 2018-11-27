@@ -93,21 +93,20 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/keras_pretrained_model.png" width=75%/> 
 </p>
 
-               * 將Avito照片資料集套入inception模型中的效果以及預測結果：
-               
-                 1. inception模型"能夠"準確預測舉例（圖片辨識率/信心程度 > 90%）
+* 將Avito照片資料集套入inception模型中的效果以及預測結果：               
+1. inception模型"能夠"準確預測舉例（圖片辨識率/信心程度 > 90%）
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/1.png" width=70%/> 
 </p>
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/3.png" width=70%/> 
 </p>
 
-                 2. inception模型"無法"準確預測舉例（圖片辨識率/信心程度 < 10%）
+2. inception模型"無法"準確預測舉例（圖片辨識率/信心程度 < 10%）
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/2.png" width=70%/> 
 </p>
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/4.png" width=70%/> 
 </p>
 
-                 3. inception模型對於同樣的類別的照片比集（圖片辨識率高 ＆ 圖片辨識率低）
+3. inception模型對於同樣的類別的照片比集（圖片辨識率高 ＆ 圖片辨識率低）
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/.png" width=70%/> 
 </p>
 
