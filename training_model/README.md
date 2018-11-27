@@ -58,8 +58,8 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
                       結合和，GRU會得到當前隱藏節點的輸出和傳遞給下一個節點的隱狀態
                       
                       圖：GRU的輸入輸出結構
-<div style="text-align: center"> <img src="https://i1.read01.com/SIG=7je5e5/304932354d336f595442.jpg" width=50%/> 
-</div>
+<p align="center"> <img src="https://i1.read01.com/SIG=7je5e5/304932354d336f595442.jpg" width=50%/> 
+</p>
 
             3. title/description各別經過一層dense層（dense = dense + dropout + Prelu）
             4. 將title/description做串連concatenate後加入一層dense層dense = dense + dropout + Prelu）
