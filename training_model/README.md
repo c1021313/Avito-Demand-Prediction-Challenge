@@ -24,12 +24,11 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享：
 ### a.文字特徵:  <br>
            1. 經由Fasttext預訓練的詞向量做Embedding
               [Fasttext提供的預先訓練好的詞向量連結](https://fasttext.cc/docs/en/crawl-vectors.html)
+<div style="text-align: center"> <img src="https://camo.githubusercontent.com/4120cfa3f075b4820e2c933f9baad490bef2c64e/687474703a2f2f69322e62616e6771752e636f6d2f6a2f6e6577732f32303138303630362f3734396132323135323832353736333231363653353137332e706e67" width=80%/> 
+</div>
            
                  > Facebook FAIR實驗室開源了fastText。 Facebook聲稱fastText比其他學習方法要快得多，
                  能夠訓練模型「在使用標準多核CPU的情況下10分鐘內處理超過10億個詞彙」，fastText能將訓練時間由數天縮短到幾秒鐘。
-<div style="text-align: center"> <img src="https://camo.githubusercontent.com/4120cfa3f075b4820e2c933f9baad490bef2c64e/687474703a2f2f69322e62616e6771752e636f6d2f6a2f6e6577732f32303138303630362f3734396132323135323832353736333231363653353137332e706e67" width=80%/> 
-</div>
-
 
                  我們使用一個標準多核 CPU，得到了在10分鐘內訓練完超過10億詞彙量模型的結果。
                  此外，fastText還能在五分鐘內將50萬個句子分成超過30萬個類別。
