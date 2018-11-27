@@ -20,17 +20,17 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享：
 ![image](https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/my_nn_structure.png)
   <br>
 ### a.文字特徵:  <br>
-     1. 經由Fasttext預訓練的詞向量做Embedding
-     [Fasttext提供的預先訓練好的詞向量連結](https://fasttext.cc/docs/en/crawl-vectors.html)
+           1. 經由Fasttext預訓練的詞向量做Embedding
+              [Fasttext提供的預先訓練好的詞向量連結](https://fasttext.cc/docs/en/crawl-vectors.html)
            
-     > Facebook FAIR實驗室開源了fastText。 Facebook聲稱fastText比其他學習方法要快得多，
-     能夠訓練模型「在使用標準多核CPU的情況下10分鐘內處理超過10億個詞彙」，fastText能將訓練時間由數天縮短到幾秒鐘。
-     FastText 專註於文本分類。這使得在特別大型的數據集上，它能夠被快速訓練。我們使用一個標準多核 CPU，
-     得到了在10分鐘內訓練完超過10億詞彙量模型的結果。此外， fastText還能在五分鐘內將50萬個句子分成超過30萬個類別。
-     fastText對於許多語言都通用，除了文本分類以外，fastText也能被用來學習詞彙向量表徵。利用其語言形態結構，
-     fastText能夠被設計用來支持包括英語、德語、西班牙語、法語以及捷克語等多種語言。
+                 > Facebook FAIR實驗室開源了fastText。 Facebook聲稱fastText比其他學習方法要快得多，
+                 能夠訓練模型「在使用標準多核CPU的情況下10分鐘內處理超過10億個詞彙」，fastText能將訓練時間由數天縮短到幾秒鐘。
+                 FastText 專註於文本分類。這使得在特別大型的數據集上，它能夠被快速訓練。我們使用一個標準多核 CPU，
+                 得到了在10分鐘內訓練完超過10億詞彙量模型的結果。此外， fastText還能在五分鐘內將50萬個句子分成超過30萬個類別。
+                 fastText對於許多語言都通用，除了文本分類以外，fastText也能被用來學習詞彙向量表徵。利用其語言形態結構，
+                 fastText能夠被設計用來支持包括英語、德語、西班牙語、法語以及捷克語等多種語言。
      
-     2. 載入事前訓練好的CountVectorizer以及TfidfVectorizer替文字特徵做轉換 
+            2. 載入事前訓練好的CountVectorizer以及TfidfVectorizer替文字特徵做轉換 
 ### b. 分類特徵:  <br> 
             1. 使用map轉換為俄文類別 
             2. 做label Encoding 
