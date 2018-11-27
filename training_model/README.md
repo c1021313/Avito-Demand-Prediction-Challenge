@@ -73,23 +73,25 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
             
                       > 為什麼要將分類特徵轉換成embedding向量？
                       
-                        a. 讓相似分類特徵在高維度向量空間中更能聚合緊密，比起lable encoding更能表達類別與類別之間的相似程度
+                        a. 讓相似分類特徵在高維度向量空間中更能聚合緊密，比起lable encoding更能表達類別與類別之間的關係。
                         b. 可視為one-hot-encoding降維 
                         c. 參考paper資料：
                            https://arxiv.org/pdf/1604.06737.pdf
                            https://www.fast.ai/2018/04/29/categorical-embeddings/
                            https://medium.com/@satnalikamayank12/on-learning-embeddings-for-categorical-data-using-keras-165ff2773fc9
-            4. 將embedding之後的分類特徵做concatenate後加入一層dense層dense = dense + dropout + Prelu）
+                           
+            4. 將embedding之後的分類特徵做concatenate後加入一層dense層（dense = dense + dropout + Prelu）
 <br> <br> 
 ### c. 數值特徵:   <br> 
-            1. 將數值特徵個別填補空缺值
-            2. 取log 
-            3. 與 d.圖片特徵 concatenate後一同經過一層dense層dense = dense + dropout + Prelu）
+            1. 將數值特徵個別填補空缺值   
+            2. 取log           
+            3. 與 d.圖片特徵 concatenate後一同經過一層dense層（dense = dense + dropout + Prelu）
 <br> <br> 
 ### d. 圖片特徵:  <br>
+
             1. 使用keras提供的預訓練深度學習模型，預測圖片信心指數，將此作為模型的圖片特徵萃取（圖片辨識率/信心程度）
-               我們在這邊使用的為其中的inception模型。
-            2. 與 c.數值特徵  concatenate後一同經過一層dense層dense = dense + dropout + Prelu）
+               我們在這邊使用的為其中的inception模型。               
+            2. 與 c.數值特徵  concatenate後一同經過一層dense層 （dense = dense + dropout + Prelu）
                
  * keras提供以下幾種[Apretrained model](https://keras.io/applications/)：
 
