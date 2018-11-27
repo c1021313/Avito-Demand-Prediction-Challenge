@@ -8,8 +8,9 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
     * 分類特徵(ex. category_name/parent_category_name/user_type/image_top_1等等) :  <br>
     * 數值特徵(price) :   <br>
     * 圖片特徵(image) :  <br>
-
-<img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/Avito商品範例.png" width=120%/> <br>
+    
+<p align="center"> 
+<img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/Avito商品範例.png" width=100%/></p> <br>
 
   
 ------ 
@@ -85,8 +86,9 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
             2. 取log 
 <br> <br> 
 ### d. 圖片特徵:  <br>
-            1. 使用keras提供的預訓練inception模型，預測圖片信心指數，將此作為模型的圖片特徵萃取
-            
-               keras提供以下幾種pretrained model：
-<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/keras_pretrained_model.png" width=50%/> 
+            1. 使用keras提供的預訓練深度學習模型，預測圖片信心指數，將此作為模型的圖片特徵萃取
+               我們在這邊使用的為其中的inception模型。
+               
+               * keras提供以下幾種pretrained model：
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/keras_pretrained_model.png" width=75%/> 
 </p>
