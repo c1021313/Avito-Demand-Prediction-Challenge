@@ -86,7 +86,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
             2. 取log 
 <br> <br> 
 ### d. 圖片特徵:  <br>
-            1. 使用keras提供的預訓練深度學習模型，預測圖片信心指數，將此作為模型的圖片特徵萃取
+            1. 使用keras提供的預訓練深度學習模型，預測圖片信心指數，將此作為模型的圖片特徵萃取（圖片辨識率/信心程度）
                我們在這邊使用的為其中的inception模型。
                
                * keras提供以下幾種pretrained model：
@@ -95,15 +95,20 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 
                * 將Avito照片資料集套入inception模型中的效果以及預測結果：
                
-                 >> inception模型"能夠"準確預測舉例（信心程度 > 90%）
-<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/1.png" width=50%/> 
+                 1. inception模型"能夠"準確預測舉例（圖片辨識率/信心程度 > 90%）
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/1.png" width=70%/> 
 </p>
-<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/2.png" width=50%/> 
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/3.png" width=70%/> 
 </p>
 
-                 >> inception模型"無法"準確預測舉例（信心程度 < 10%）
-<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/3.png" width=50%/> 
+                 2. inception模型"無法"準確預測舉例（圖片辨識率/信心程度 < 10%）
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/2.png" width=70%/> 
 </p>
-<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/4.png" width=50%/> 
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/4.png" width=70%/> 
 </p>
+
+                 3. inception模型對於同樣的類別的照片比集（圖片辨識率高 ＆ 圖片辨識率低）
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/.png" width=70%/> 
+</p>
+
 
