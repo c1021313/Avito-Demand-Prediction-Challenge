@@ -24,10 +24,6 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
   <br>
 ### a.文字特徵:  <br>
 
-<div style="text-align: center"> <img src="https://camo.githubusercontent.com/4120cfa3f075b4820e2c933f9baad490bef2c64e/687474703a2f2f69322e62616e6771752e636f6d2f6a2f6e6577732f32303138303630362f3734396132323135323832353736333231363653353137332e706e67" width=80%/> 
-</div>
-
-
            1. 經由Fasttext預訓練的詞向量做Embedding
               [Fasttext提供的預先訓練好的詞向量連結](https://fasttext.cc/docs/en/crawl-vectors.html)
            
@@ -47,8 +43,25 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
                       因此 fastText 還加入了 N-gram 特徵。“我 愛 她” 這句話中的詞袋模型特徵是 “我”，“愛”, “她”。這些特徵和句子 
                       “她 愛 我” 的特徵是一樣的。如果加入 2-Ngram，第一句話的特徵還有 “我-愛” 和 “愛-她”，這兩句話 “我 愛 她” 和 
                       “她 愛 我” 就能區別開來了。當然啦，為了提高效率，我們需要過濾掉低頻的 N-gram。
-     
-            2. 載入事前訓練好的CountVectorizer以及TfidfVectorizer替文字特徵做轉換 
+
+<div style="text-align: center"> <img src="https://camo.githubusercontent.com/4120cfa3f075b4820e2c933f9baad490bef2c64e/687474703a2f2f69322e62616e6771752e636f6d2f6a2f6e6577732f32303138303630362f3734396132323135323832353736333231363653353137332e706e67" width=80%/> 
+</div>
+
+            2. 分別各經過兩層GRU層
+            
+                    > GRU介紹：
+                      GRU（Gate Recurrent Unit）是循環神經網絡（Recurrent Neural Network, RNN）的一種。
+                      和LSTM（Long-Short Term Memory）一樣，也是為了解決長期記憶和反向傳播中的梯度等問題而提出來的。
+                      我們在我們的實驗中選擇GRU是因為它的實驗效果與LSTM相似，但是更易於計算。
+                      GRU淺析2.1 GRU的輸入輸出結構GRU的輸入輸出結構與普通的RNN是一樣的。
+                      有一個當前的輸入，和上一個節點傳遞下來的隱狀態（hidden state），這個隱狀態包含了之前節點的相關信息。
+                      結合和，GRU會得到當前隱藏節點的輸出和傳遞給下一個節點的隱狀態
+<div style="text-align: center"> <img src="https://i1.read01.com/SIG=7je5e5/304932354d336f595442.jpg" width=80%/> 
+</div>
+
+
+
+                    
 ### b. 分類特徵:  <br> 
             1. 使用map轉換為俄文類別 
             2. 做label Encoding 
