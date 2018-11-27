@@ -89,7 +89,8 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
             1. 使用keras提供的預訓練深度學習模型，預測圖片信心指數，將此作為模型的圖片特徵萃取（圖片辨識率/信心程度）
                我們在這邊使用的為其中的inception模型。
                
-               * keras提供以下幾種pretrained model：
+ * keras提供以下幾種[Apretrained model](https://keras.io/applications/)：
+
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/keras_pretrained_model.png" width=75%/> 
 </p>
 
@@ -107,7 +108,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 </p>
 
 3. inception模型對於同樣的類別的照片比集（圖片辨識率高 ＆ 圖片辨識率低）
-<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/.png" width=70%/> 
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/5.png" width=70%/> 
 </p>
 
 
