@@ -1,5 +1,5 @@
 # Avito-Demand-Prediction-Challenge
-Kaggle競賽-Avito-Demand-Prediction-Challenge分享 
+Kaggle競賽-Avito-Demand-Prediction-Challenge專案
  [成交機率預測系統連結](http://103-quicksell.iii.wpj.tw:1337/ "去預測看看")
 
 ## 一、專案計畫概述	
