@@ -2,7 +2,7 @@
 Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br> <br> <br>
 
 
-## 1. 序言: <br>
+## 一、 序言: <br>
 由於在Avito拍賣網站上的訓練資料，包括四種格式的特徵值，見以下範例圖片：  <br>  <br>
     * 文字特徵(ex title/description) :  <br>
     * 分類特徵(ex. category_name/parent_category_name/user_type/image_top_1等等) :  <br>
@@ -16,8 +16,8 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 <br> <br> <br>
   
   
-## 2. nn神經網路架構:
-<br> 
+## 二、 nn神經網路架構:
+ vectors.html
 為了要同時將四種形式特徵合併至同一個深度學習神經網路模型之中，我將四種特徵分別做前處理後，使用以下架構構建神經網路模型以進行模型訓練，詳細特徵前處理方式請參考以下內容： <br>
 
 ![image](https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/my_nn_structure.png)
@@ -85,4 +85,8 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
             2. 取log 
 <br> <br> 
 ### d. 圖片特徵:  <br>
-            1. 使用keras提供的預訓練模型做
+            1. 使用keras提供的預訓練inception模型，預測圖片信心指數，將此作為模型的圖片特徵萃取
+            
+               keras提供以下幾種pretrained model：
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/keras_pretrained_model.png" width=50%/> 
+</p>
