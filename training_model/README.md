@@ -64,20 +64,25 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
             3. title/description各別經過一層dense層（dense = dense + dropout + Prelu）
             4. 將title/description做串連concatenate後加入一層dense層dense = dense + dropout + Prelu）
             
-                    
+<br> <br>                     
 ### b. 分類特徵:  <br> 
             1. 將分類特徵個別填補空缺值
             2. 做label Encoding
-            3. 使用keras Embedding將分類特徵轉換成高維度向量空間
+            3. 使用keras Embedding將分類特徵轉做向量化
             
-                      > 為什麼要轉換成高維度向量？
-                        參考paper資料：
-                        https://arxiv.org/pdf/1604.06737.pdf
-                        https://www.fast.ai/2018/04/29/categorical-embeddings/
-                        https://medium.com/@satnalikamayank12/on-learning-embeddings-for-categorical-data-using-keras-165ff2773fc9
-            
+                      > 為什麼要將分類特徵轉換成embedding向量？
+                      
+                        a. 讓相似分類特徵在高維度向量空間中更能聚合緊密，比起lable encoding更能表達類別與類別之間的相似程度
+                        b. 可視為one-hot-encoding降維 
+                        c. 參考paper資料：
+                           https://arxiv.org/pdf/1604.06737.pdf
+                           https://www.fast.ai/2018/04/29/categorical-embeddings/
+                           https://medium.com/@satnalikamayank12/on-learning-embeddings-for-categorical-data-using-keras-165ff2773fc9
+
+<br> <br> 
 ### c. 數值特徵:   <br> 
-            1. 從台幣(NTD) 轉換為俄國盧布 (RUB) 
-            2. 並取log 
+            1. 將數值特徵個別填補空缺值
+            2. 取log 
+<br> <br> 
 ### d. 圖片特徵:  <br>
-            1. 使用上方模型(1)預測出的機率 
+            1. 使用keras提供的預訓練模型做
