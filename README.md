@@ -3,7 +3,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge專案
  [成交機率預測系統連結](http://103-quicksell.iii.wpj.tw:1337/ "去預測看看")
 
 ## 一、專案計畫概述	
-* 專案主軸
+### 1. 專案主軸
 
 
 
@@ -13,7 +13,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge專案
 
 <br><br>
 
-* 專案目標
+### 2. 專案目標
 
      藉由該數據分析競賽所提供之相關數據資料集，經實際操作、演練大數據分析及架構各式深度學習演算法；撰寫一套網站架構式之分析及預測廣告產品成交機率系統。
 
@@ -21,13 +21,10 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge專案
 
 
 
-* 專案流程
+### 3. 專案流程
 
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/6.png" width=70%/> 
 </p>
-
-
-
 
   1. UI       →   NODE.JS ：使用者輸入所需預測之商品資訊（商品圖片/標題/敘述/價格/商品所屬分類）
   2. NODE.JS  →   SQL          ：NODE.JS接收使用者輸入之資料，並存入SQL
