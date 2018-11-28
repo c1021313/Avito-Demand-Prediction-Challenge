@@ -10,7 +10,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge專案
 
   其競賽方式為藉由平台所提供之資料集包含照片、文字敘述、產品名稱等眾多資料，加以訓練，用以預測該項產品之成交機率。
 
-<br><br>
+<br>
 
 ### 2. 專案目標
 
