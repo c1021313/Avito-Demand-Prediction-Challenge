@@ -51,7 +51,36 @@
 
 ### 2. 模型架構構想：
 <br>
-  
+
   為了要同時將四種形式(文字text/分類categorical/數值numerical/圖片image)特徵合併至同一個深度學習神經網路模型之中，我將四種特徵分別做前處理後，並串連在一起，再使用如上圖中架構之神經網路模型以進行模型訓練，並輸出訓練完成的模型權重，以利為後續重新使用並讀取模型，供系統使用來預測商品成交機率。
 
 詳細演算法流程，請參考[training_model/README.md](https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/training_model/README.md)檔案
+
+<br><br>
+
+
+-------
+
+
+
+<br><br><br>
+
+## 三、UI呈現 [QUICK SELL - 商品預測成交機率系統網站連結](http://103-quicksell.iii.wpj.tw:1337/ "去預測看看")
+### 圖1. QUICK-SELL 成交機率系統網站首頁：
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/ui_1.png" width=85%/> 
+</p>
+
+<br><br>
+
+
+### 圖2. 輸入頁面，使用者輸入其所需預測之商品資訊(商品標題/所屬分類/分類細項/價格/描述/圖片)
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/ui_2.png" width=85%/> 
+</p>
+
+<br><br>
+
+
+### 圖3.  使用者輸入資訊傳入後端，經過上述之模型進行成交機率預測，並回傳至UI介面給使用者。
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/ui_3.png" width=85%/> 
+</p>
+
