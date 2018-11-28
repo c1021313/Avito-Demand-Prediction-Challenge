@@ -6,11 +6,16 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge專案
 
 ### 1. 專案主軸 : [QUICK SELL - 商品預測成交機率系統](http://103-quicksell.iii.wpj.tw:1337)
 
+<br>
+
    [Avito Demand Prediction Challenge](https://www.kaggle.com/c/avito-demand-prediction)為大數據競賽平台Kaggles的眾多題目之一。Avito為俄羅斯最大的分類廣告(產品)網站，該競賽希望能藉由該網站所提供之產品廣告相關訊息來預測廣告產品之需求
 
   其競賽方式為藉由平台所提供之資料集包含照片、文字敘述、產品名稱等眾多資料，加以訓練，用以預測該項產品之成交機率。
 
 <br>
+
+-------
+
 
 ### 2. 專案目標
 
@@ -18,7 +23,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge專案
 
   本專案預計將以各式深度學習演算法之集成締結模型來針對資料集提供訓練，並對日後網站使用者所給予之資料進行立即性的成交機率預測，該預測結果為該使用者所提供之網路商品資訊其所預測出該項廣告商品的網路成交機率。並可依不同參數供使用者自行調整，以達最佳化網路銷售成交機率。
 
-
+-------
 
 ### 3. 專案流程
 
