@@ -33,3 +33,20 @@
   4. PYTHON   →  SQL           ：PYTHON讀取SQL資訊並進行前處理
   5. PYTHON   →  NODE.JS.   : PYTHON模型預測成交機率並回傳NODE.JS
   6. NODE.JS   →      UI           : NODE.JS將成交機率傳送至UI呈現給使用者
+
+
+-------
+
+
+## 二、演算法模型
+### 1. 神經網路模型架構：
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/my_nn_structure.png" width=85%/> 
+</p>
+
+### 2. 模型架構構想：
+<br>
+  
+  為了要同時將四種形式(文字text/分類categorical/數值numerical/圖片image)特徵合併至同一個深度學習神經網路模型之中，我將四種特徵分別做前處理後，並串連在一起，再使用如上圖中架構之神經網路模型以進行模型訓練，並輸出訓練完成的模型權重，以利為後續重新使用並讀取模型，供系統使用來預測商品成交機率。
+
+詳細演算法流程，請參考training_model/README.md 檔案
+[training_model/README.md](https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/training_model/README.md)
