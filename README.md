@@ -67,7 +67,7 @@
 
 ## 三、UI呈現 
 
-#### [QUICK SELL - 商品預測成交機率系統網站連結](http://103-quicksell.iii.wpj.tw:1337/ "去預測看看")
+### [QUICK SELL - 商品預測成交機率系統網站連結](http://103-quicksell.iii.wpj.tw:1337/ "去預測看看")
 
 
 ### 圖1. QUICK-SELL 成交機率系統網站首頁：
