@@ -65,7 +65,11 @@
 
 <br><br><br>
 
-## 三、UI呈現 [QUICK SELL - 商品預測成交機率系統網站連結](http://103-quicksell.iii.wpj.tw:1337/ "去預測看看")
+## 三、UI呈現 
+### [QUICK SELL - 商品預測成交機率系統網站連結](http://103-quicksell.iii.wpj.tw:1337/ "去預測看看")
+
+<br>
+
 ### 圖1. QUICK-SELL 成交機率系統網站首頁：
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/ui_1.png" width=85%/> 
 </p>
