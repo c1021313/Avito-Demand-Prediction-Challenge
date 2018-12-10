@@ -32,13 +32,11 @@
 
 
 <br><br>
+<br><br><br>
 
 
 -------
 
-
-
-<br><br><br>
 
 ## 二、演算法模型
 ### 1. 神經網路模型架構：
@@ -53,13 +51,11 @@
 詳細演算法流程，請參考[training_model/README.md](https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/training_model/README.md)檔案
 
 <br><br>
+<br><br><br>
 
 
 -------
 
-
-
-<br><br><br>
 
 ## 三、UI呈現 
 
@@ -85,11 +81,10 @@
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/ui_3.png" width=85%/> 
 </p>
 
+<br><br><br>
+
 -------
 
-
-
-<br><br><br>
 
 ## 四、網頁伺服器整合架構分析
 
@@ -135,12 +130,9 @@
 
   啟動模型運算之Python程式，用以計算總體預測結果及圖像辨識度
 
+<br><br><br>
 
 -------
-
-
-
-<br><br><br>
 
 ## 五、Aws雲端大數據平台架設
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/雲端系統架構.png" width=85%/> 
