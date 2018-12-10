@@ -27,12 +27,8 @@
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/6.png" width=70%/> 
 </p>
 
-  1. UI       →   NODE.JS ：使用者輸入所需預測之商品資訊（商品圖片/標題/敘述/價格/商品所屬分類）
-  2. NODE.JS  →   SQL          ：NODE.JS接收使用者輸入之資料，並存入SQL
-  3. NODE.JS  →   PYTHON  ：NODE.JS啟動python檔案（模型）
-  4. PYTHON   →  SQL           ：PYTHON讀取SQL資訊並進行前處理
-  5. PYTHON   →  NODE.JS.   : PYTHON模型預測成交機率並回傳NODE.JS
-  6. NODE.JS   →      UI           : NODE.JS將成交機率傳送至UI呈現給使用者
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/7.jpg" width=85%/> 
+</p>
 
 
 <br><br>
