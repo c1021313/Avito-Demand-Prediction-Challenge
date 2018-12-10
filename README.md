@@ -160,3 +160,5 @@
 目前市面上主要提供雲端機台架設的供應商，主要為Amazon的AWS，Microsoft的Azure與Google的GCP，經過我們逐一試用後，發現在穩定性、操作彈性、安全性、使用經驗上，AWS皆較為突出，因此最後我們決定採用AWS來架設雲端伺服器。
 
 
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/8.png" width=85%/> 
+</p>
