@@ -11,10 +11,10 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
     
 <p align="center"> 
 <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/Avito商品範例.png" width=80%/></p> <br>
-
+<br> <br> <br>
   
 ------ 
-<br> <br> <br>
+
   
   
 ## 二、 nn神經網路架構: <br>
@@ -23,6 +23,16 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 
 ![image](https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/my_nn_structure.png)
   <br>
+<br> <br> <br>
+  
+------ 
+<br> <br> <br>
+  
+## 三、 特徵前處理/模型訓練流程解析: <br>
+
+  <p align="center"> 
+<img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/10.png" width=80%/></p> <br>
+
 ### a.文字特徵:  <br>
 
            1. 經由Fasttext預訓練的詞向量做Embedding
