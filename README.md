@@ -84,3 +84,27 @@
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/ui_3.png" width=85%/> 
 </p>
 
+-------
+
+
+
+<br><br><br>
+
+## 四、Aws雲端大數據平台架設
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/雲端系統架構.png" width=85%/> 
+</p>
+
+本專案伺服器的選擇，我們針對各個面向，考量了各種不同的因素，最後使用了目前的AWS雲端伺服器，茲分別說明如下:
+#### 1. 伺服器架設:本地端或雲端
+架設在雲端上可避免如果未來需要更大量的運算或是空間，可以直接線上升級租賃的伺服器設備之等級，而不用再額外購入機台或是設備，如此一來可以節省人力資源與設備維護的成本。
+我們可以隨時依據使用的流量或需求，來調整伺服器等級，避免成本的浪費。
+<br>
+
+#### 2. 作業系統選擇:Windows或Linux
+由於架設在雲端上的伺服器，主要處理為網頁回應與程式運算，並不需要圖形化的顯示與操作介面，因此我們採用Linux系統以節省伺服器的硬碟容量與增進運算效能。
+<br>
+
+#### 3. 雲端伺服器供應商選擇:Amazon/Microsoft/Google
+目前市面上主要提供雲端機台架設的供應商，主要為Amazon的AWS，Microsoft的Azure與Google的GCP，經過我們逐一試用後，發現在穩定性、操作彈性、安全性、使用經驗上，AWS皆較為突出，因此最後我們決定採用AWS來架設雲端伺服器。
+
+
