@@ -1,4 +1,4 @@
-# Avito-Demand-Prediction-Challenge
+# QUICK SELL - 商品預測成交機率系統
 ## 一、專案計畫概述	
 
 ### 1. 專案主軸 : [QUICK SELL - 商品預測成交機率系統](http://103-quicksell.iii.wpj.tw:1337/ "去預測看看")
