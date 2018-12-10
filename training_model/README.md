@@ -150,10 +150,15 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 ## 四、 補充-模型運用技巧:遷移學習 Transfer Learning <br>
 
 在面對某一領域的具體問題時，通常可能無法得到構建模型所需規模的數據。然而在一個模型訓練任務中針對某種類型數據獲得的關係也可以輕鬆地應用於同一領域的不同問題。這種技術也叫做遷移學習（Transfer Learning）。
+
 <br>
+
 我們可以直接使用預訓練過的模型，這種模型已經通過大量容易獲得的數據集進行過訓練（雖然是針對完全不同的任務進行訓練的，但輸入的內容完全相同，只不過輸出的結果不同）。可對模型進行完善的「通用化」。
+
 <br>
+
 我們專案模型在建構時也引入了(1). Fasttext pretrained詞向量 (2).引入Keras 中inception pertained model作為圖片特徵萃取方式
+
 <br>
 
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/_144.png" width=70%/> 
