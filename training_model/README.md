@@ -54,9 +54,13 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
                       因此 fastText 還加入了 N-gram 特徵。“我 愛 她” 這句話中的詞袋模型特徵是 “我”，“愛”, “她”。這些特徵和句子 
                       “她 愛 我” 的特徵是一樣的。如果加入 2-Ngram，第一句話的特徵還有 “我-愛” 和 “愛-她”，這兩句話 “我 愛 她” 和 
                       “她 愛 我” 就能區別開來了。當然啦，為了提高效率，我們需要過濾掉低頻的 N-gram。
+                      FASTTEXT預訓練詞向量
+                      
+                      Facebook已經基於其收集的海量語料，訓練好了fasttext的詞向量模型，目前已經支持150多種語言。本專案在此使用的是俄文Russian版本作引入。
 
-<p align="center"> <img src="https://camo.githubusercontent.com/4120cfa3f075b4820e2c933f9baad490bef2c64e/687474703a2f2f69322e62616e6771752e636f6d2f6a2f6e6577732f32303138303630362f3734396132323135323832353736333231363653353137332e706e67" width=80%/> 
-</p>
+  <p align="center"> 
+<img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/_167.png" width=90%/></p> <br>
+
 
             2. title/description分別各經過兩層GRU層
             
@@ -136,3 +140,13 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 </p>
 
 
+## 四、 補充-模型運用技巧:遷移學習 Transfer Learning <br>
+
+在面對某一領域的具體問題時，通常可能無法得到構建模型所需規模的數據。然而在一個模型訓練任務中針對某種類型數據獲得的關係也可以輕鬆地應用於同一領域的不同問題。這種技術也叫做遷移學習（Transfer Learning）。
+
+我們可以直接使用預訓練過的模型，這種模型已經通過大量容易獲得的數據集進行過訓練（雖然是針對完全不同的任務進行訓練的，但輸入的內容完全相同，只不過輸出的結果不同）。可對模型進行完善的「通用化」。
+
+我們專案模型在建構時也引入了(1). Fasttext pretrained詞向量 (2).引入Keras 中inception pertained model作為圖片特徵萃取
+
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/_144.png" width=70%/> 
+</p>
