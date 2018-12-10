@@ -43,10 +43,7 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 
                       我們使用一個標準多核 CPU，得到了在10分鐘內訓練完超過10億詞彙量模型的結果。
                       此外，fastText還能在五分鐘內將50萬個句子分成超過30萬個類別。
-                 
-                      fastText對於許多語言都通用，除了文本分類以外，fastText也能被用來學習詞彙向量表徵。利用其語言形態結構，
-                      fastText能夠被設計用來支持包括英語、德語、西班牙語、法語以及捷克語等多種語言。
-                 
+                   
                       FastText引入了subword n-gram的概念來解決詞形變化(morphology)的問題。直觀上，它將一個單詞打散到字符級別，
                       並且利用字符級別的n-gram信息來捕捉字符間的順序關係，希望能夠以此豐富單詞內部更細微的語義。我們知道，
                       西方語言文字常常通過前綴、後綴、字根來構詞，漢語也有單字表義的傳統，所以這樣的做法聽起來還是有一定的道理。
@@ -55,6 +52,10 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
                       “她 愛 我” 的特徵是一樣的。如果加入 2-Ngram，第一句話的特徵還有 “我-愛” 和 “愛-她”，這兩句話 “我 愛 她” 和 
                       “她 愛 我” 就能區別開來了。當然啦，為了提高效率，我們需要過濾掉低頻的 N-gram。
                       FASTTEXT預訓練詞向量
+                      
+                      fastText對於許多語言都通用，除了文本分類以外，fastText也能被用來學習詞彙向量表徵。利用其語言形態結構，
+                      fastText能夠被設計用來支持包括英語、德語、西班牙語、法語以及捷克語等多種語言。
+               
                       
                       Facebook已經基於其收集的海量語料，訓練好了fasttext的詞向量模型，目前已經支持150多種語言。本專案在此使用的是俄文Russian版本作引入。
 
@@ -139,14 +140,43 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/5.png" width=70%/> 
 </p>
 
+<br> <br> <br>
+  
+------ 
+
+  
+  
 
 ## 四、 補充-模型運用技巧:遷移學習 Transfer Learning <br>
 
 在面對某一領域的具體問題時，通常可能無法得到構建模型所需規模的數據。然而在一個模型訓練任務中針對某種類型數據獲得的關係也可以輕鬆地應用於同一領域的不同問題。這種技術也叫做遷移學習（Transfer Learning）。
-
+<br>
 我們可以直接使用預訓練過的模型，這種模型已經通過大量容易獲得的數據集進行過訓練（雖然是針對完全不同的任務進行訓練的，但輸入的內容完全相同，只不過輸出的結果不同）。可對模型進行完善的「通用化」。
-
-我們專案模型在建構時也引入了(1). Fasttext pretrained詞向量 (2).引入Keras 中inception pertained model作為圖片特徵萃取
+<br>
+我們專案模型在建構時也引入了(1). Fasttext pretrained詞向量 (2).引入Keras 中inception pertained model作為圖片特徵萃取方式
+<br>
 
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/_144.png" width=70%/> 
 </p>
+
+
+<br> <br> <br>
+  
+------ 
+
+  
+  
+
+## 五、 模型訓練過程 Model Training Process <br>
+
+#### 建立俄文Tokenizer分詞器文本字典
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/_168.png" width=70%/> 
+</p>
+
+<br>
+
+#### 神經網路深度學習模型訓練過程
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/_169.png" width=70%/> 
+</p>
+
+<br>
