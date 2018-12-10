@@ -170,13 +170,13 @@ Kaggle競賽-Avito-Demand-Prediction-Challenge演算法模型建構分享： <br
 ## 五、 模型訓練過程 Model Training Process <br>
 
 #### 建立俄文Tokenizer分詞器文本字典
-<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/_168.png" width=70%/> 
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/_169.png" width=70%/> 
 </p>
 
 <br>
 
 #### 神經網路深度學習模型訓練過程
-<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/_169.png" width=70%/> 
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/_168.png" width=70%/> 
 </p>
 
 <br>
