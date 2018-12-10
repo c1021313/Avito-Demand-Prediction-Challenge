@@ -66,6 +66,7 @@
 ### [QUICK SELL - 商品預測成交機率系統網站連結](http://103-quicksell.iii.wpj.tw:1337/ "去預測看看")
 
 
+
 ### 圖1. QUICK-SELL 成交機率系統網站首頁：
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/ui_1.png" width=85%/> 
 </p>
@@ -90,7 +91,58 @@
 
 <br><br><br>
 
-## 四、Aws雲端大數據平台架設
+## 四、網頁伺服器整合架構分析
+
+<p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/前端架構.png" width=85%/> 
+</p>
+
+### 1. 前端網頁
+
+#### · 網頁呈現
+ 
+主要以HTML5 ,CSS ,JavaScript ,Jquery,等程式語言建構前端網頁；而當中又以兩大主要功能為主要目標，其一為運算成果呈現、二為使用者體驗。
+
+
+#### · 運算成果呈現
+   
+
+內含兩個項目，一為輸入圖像呈現，即使用者上傳之商品圖像；另一為總體成果分析，內含商品預測之成交機率及圖像辨識率；預測之成交機率可供使用者參考是否需精進或更改其文字端輸入資料，圖像辨識率之功能亦同。
+
+ 
+
+#### · 使用者體驗
+
+內含兩個項目，一為文字辨識，即非圖像資料之輸入，用以提供後台模型進行總體結果預測，其中包含以下項目: 商品名稱、商品種類、商品價格、商品描述。另一為靜態圖像辨識，即圖像資料之輸入，用以提供後台模型進行圖像辨識度之計算。
+
+
+
+
+### 1. 後端網頁伺服器
+
+後端伺服器 : 主要以Node.js程式語言撰寫後端伺服器之功能，其中包含三大功能，分別為:
+
+
+#### · 網頁呈現
+
+  接收前端網頁資料並回傳該預測結果
+
+
+#### · 資料庫系統
+
+銜接MySQL資料庫系統，將使用者輸入之資料儲存，以供日後精進模型之預備 資料  
+
+#### · 模型運算
+
+  啟動模型運算之Python程式，用以計算總體預測結果及圖像辨識度
+
+
+-------
+
+
+
+<br><br><br>
+
+## 五、Aws雲端大數據平台架設
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/雲端系統架構.png" width=85%/> 
 </p>
 
