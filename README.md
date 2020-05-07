@@ -155,3 +155,10 @@
 
 <p align="center"> <img src="https://github.com/c1021313/Avito-Demand-Prediction-Challenge/blob/master/img/8.png" width=85%/> 
 </p>
+
+
+
+1. 熟悉python並針對公司工廠端製程優化、設備預知保養等問題，提出並實做AI解決方案，規劃並搭配機器學習/深度學習模型建置，以解決預測、分類、分群等問題，達到預期效果並提升效益。
+2. 擅長資料分析，使用Machine Learning模型優化經驗，並搭配Deep Learning框架，擅於TensorFlow / Keras框架建立深度學習模型，並整合優化類神經網路模型。最終，將專案模型實際部屬至廠內系統，以利於線上模型 online Training & online prediction。
+3. 模型預測成果進行資料視覺化Visualization / DashBoard報表呈現
+4. 即使非本科出身，更容易融入並教導，擔任LCY AI School Engineer Training 課程導師、教學Python與機器學習課程，使工廠user瞭解資料科學內涵並提出應用需求。
